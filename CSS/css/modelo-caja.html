@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seudo Clase</title>
+    <title>Modelo caja</title>
 
     <style>
-        .menu{
-            background-color: #13a4a4  ;
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
         }
 
-        .menu-nav{
+        /*Actualizar medidas*/
+        .menu {
+            background-color: #13a4a4;
+            padding: 10px 0px;
+        }
+
+        /*Menu de navegacion sin espacio al principo*/
+        .menu-nav {
             list-style: none;
+            padding-left: 5px;
+            margin: 0px;
         }
 
-        .menu-nav__item{
+        .menu-nav__item {
             display: inline-block;
         }
 
-        .menu-nav__item a{
+        .menu-nav__item a {
             color: #ffff;
             text-decoration: none;
         }
@@ -26,24 +39,33 @@
         /*Seudo clases (Define el estado de un elemento)*/
 
         /*Cuando el puntero pasa por encima cambia de color*/
-        .menu-nav__item a:hover{
+        .menu-nav__item a:hover {
             /*Elementos*/
             color: rgb(224, 67, 67);
         }
 
         /*Cuando damos clic tambien cambia a otro color */
-        .menu-nav__item a:active{
+        .menu-nav__item a:active {
             color: rgb(39, 113, 197);
         }
 
         /*Seudo Elemento (Define el estilo de una parte, especificamente de un elemento, ej: un contenifo)*/
-        .menu-nav__item a::after{
+        .menu-nav__item a::after {
             /*Elementos*/
             content: " | ";
         }
 
+        /*Modelo de caja*/
+        /*En consola se ven las medidas segun la necesidad*/
+        main{
+            width: 100%;
+            height: 300px;
+            border: 10px solid grey;
+            padding: 20px 85px;
+        }
     </style>
 </head>
+
 <body>
     <!--Lista desordenada-->
     <!--Metodologia Ven clases CSS (Una clase para cada elemento)-->
@@ -60,11 +82,20 @@
 
     <main>
         <section>
+            <h1>Hola Mundo</h1>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed soluta explicabo corporis,
+                    magnam quam eos perferendis nemo nesciunt eum omnis at iure minima necessitatibus nobis aperiam
+                    assumenda. Aut, nulla.
+                </p>
+            </div>
             <ul>
                 <li>Item</li>
             </ul>
         </section>
     </main>
-    
+
 </body>
+
 </html>
