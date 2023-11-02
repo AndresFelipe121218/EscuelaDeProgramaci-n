@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+
+    <style>
+        body{
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        div{
+            margin: 20px, 0px;
+        }
+
+        .btn{
+            background: #530d48;
+            color: #fff;
+            font-size: 16px;
+            padding: 15px 20px;
+            margin: 0 10px;
+            border-style: none;
+        }
+
+        /*Opacidad para cada ves que el puntero pase por encima del boton*/
+        /*Para que el cursor cambie de flechita a manito: cursor: pointer*/
+        .btn:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        /*Tamaño Botones*/
+        .small{
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+
+        .medium{
+            font-size: 16;
+            padding: 15px 20px;
+        }
+
+        .big{
+            font-size: 18px;
+            padding: 20px 25px;
+        }
+
+        /*Colores Botones*/
+        .azul{
+            background: #246eb9;
+        }
+
+        .verde{
+            background: #4fb560;
+        }
+
+        .naranja{
+            background: #f9a03f;
+        }
+
+        /*Efectos Botones*/
+        .border-radius{
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <button class="btn">Boton Estandar</button>
+    </div>
+
+    <div>
+        <button class="btn small azul">Boton pequeño</button>
+        <button class="btn medium verde">Boton Mediano</button>
+        <button class="btn big naranja">Boton Grande</button>
+    </div>
+
+    <div>
+        <button class="btn small azul border-radius">Boton pequeño</button>
+        <button class="btn medium verde border-radius">Boton Mediano</button>
+        <button class="btn big naranja border-radius">Boton Grande</button>
+    </div>
+    
+</body>
+</html>
