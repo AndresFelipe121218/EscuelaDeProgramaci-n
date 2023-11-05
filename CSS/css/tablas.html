@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos para tablas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Para que muestren los bordes de la tabla (table)*/
+        /*Agregar borde a las celdas de la tabla (th y td)*/
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        /*Para mostrar solo un borde*/
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+        }
+
+        th, td{
+            padding: 10px;
+        }
+
+        th{
+            background: #00c3ff;
+            color: #ffff;
+        }
+
+        /*Cuando pasemos el puntero por alguna fila de la tabla se va sombrear del color seleccionado*/
+        tr:hover {
+            background: #00ff73;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Etiqueta <tr> para sul filas, etiqueta <th> para los encabezados y <td> para sus elementos-->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>26</td>
+            <td>Peru</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>30</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+</body>
+</html>
